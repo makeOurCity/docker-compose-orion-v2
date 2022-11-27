@@ -12,7 +12,7 @@ const data = {
 axios
   .post("http://localhost:1026/v2/entities", data)
   .then((res) => {
-    console.log(res);
+    console.log(res.status);
   })
   .catch((err) => {
     console.log(err);
