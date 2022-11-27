@@ -1,0 +1,22 @@
+{
+  "name": "docker-compose-orion-v2",
+  "version": "1.0.0",
+  "description": "Launch FIWARE-Orion v2 in local",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/makeOurCity/docker-compose-orion-v2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/makeOurCity/docker-compose-orion-v2/issues"
+  },
+  "homepage": "https://github.com/makeOurCity/docker-compose-orion-v2#readme",
+  "dependencies": {
+    "axios": "^1.2.0"
+  }
+}
