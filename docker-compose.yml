@@ -1,0 +1,23 @@
+version: "3.5"
+services:
+
+  orion:
+    image: fiware/orion:3.7.0
+    ports:
+      - 1026:1026
+    command: [ "-dbhost", "mongodb" ]
+    environment:
+      ORION_MONGO_HOST: mongodb:27018
+      ORION_PORT: 1026
+      ORION_LOG_LEVEL: INFO
+    depends_on:
+      - mongodb
+
+
+  mongodb:
+    image: mongo:3.6
+    ports:
+      - 27018:27018
+    volumes:
+      - ./data/mongodb:/data/db
+      - ./data/configdb:/data/configdb
