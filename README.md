@@ -12,3 +12,11 @@ $ docker compose up
 ```console
 $ npm install
 ```
+
+## 実行
+
+### 作成
+
+```cosnole
+$ node src/01_create.js
+```
